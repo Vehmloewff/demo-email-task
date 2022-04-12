@@ -129,10 +129,10 @@
 		-webkit-filter: blur(1.5rem);
 
 		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
+		top: -2rem; /* note: positions are offset a bit to get rid of the "glowing edge" https://stackoverflow.com/a/20493740 */
+		right: -2rem;
+		left: -2rem;
+		bottom: -2rem;
 		z-index: -1;
 	}
 
