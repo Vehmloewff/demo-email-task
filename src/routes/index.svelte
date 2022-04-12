@@ -96,6 +96,17 @@
 
 	<div class="background" />
 	<div class="background-damper" />
+	<div class="background-credits">
+		Photo by <a
+			href="https://unsplash.com/@benobro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+			>ben o'bro</a
+		>
+		on
+		<a
+			href="https://unsplash.com/s/photos/city?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+			>Unsplash</a
+		>
+	</div>
 
 	{#if notice}
 		<div class="notice" class:error={notice.error} in:fly={{ y: 40 }}>{notice.text}</div>
@@ -145,6 +156,17 @@
 		z-index: -1;
 
 		background: rgba(0, 0, 0, 0.4);
+	}
+
+	.background-credits {
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		font-size: 1rem;
+		opacity: 0.5;
+	}
+	a {
+		color: inherit;
 	}
 
 	form {
