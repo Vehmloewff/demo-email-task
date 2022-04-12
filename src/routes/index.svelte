@@ -28,7 +28,7 @@
 				}
 			);
 
-			showNotice({ text: "🎉 Check your inbox!  (Don't forget the spam folder :D)" });
+			showNotice({ text: "🎉 Check your inbox!  (Don't forget the spam folder)" });
 		} catch (e) {
 			showNotice({ error: true, text: `🚫 ${e.message}` });
 		}
